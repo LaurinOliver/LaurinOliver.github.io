@@ -129,8 +129,25 @@
 
     form{
         width: 200px;
+        background-color: white;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
+        padding: 30px;
+    }
+
+    input[type="submit"]{
+        background-color: pink;   
+        padding: 10px; 
+        border-style: groove;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0,0, 0.5);
+    }
+
+    input[type="submit"]:hover{
+        transition: background 0.5s linear;
+        background-color: rgb(202, 101, 118);
+        transform: scale(1.2,1.2);
+        box-shadow: 2px 2px 3px rgba(0, 0,0, 0.7);
     }
