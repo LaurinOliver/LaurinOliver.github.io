@@ -6,9 +6,12 @@
     }
     
     nav {
-        background: #da5a6e;
+        background: #2b2e39;
         color: white;
+        position: fixed;
+        width: 100vw;
     }
+
     
     @media only screen and (max-width: 600px) {
         ul {
@@ -16,6 +19,10 @@
             align-items: center;
             margin: 0;
             padding: 0;
+        }
+        ul div {
+            flex-flow: column;
+            align-items: center;
         }
     }
     
@@ -38,7 +45,7 @@
     
     a {
         text-decoration: none;
-        color: white;
+        color: inherit;
     }
     
     a:hover {
@@ -46,8 +53,8 @@
     }
     
     section.header {
-        width: 100%;
-        min-height: 94vh;
+        width: 100vw;
+        min-height: 100vh;
         background-image: url(../img/lauri.jpeg);
         background-attachment: fixed;
         background-size: 100% 100%;
